@@ -6,7 +6,7 @@ import ArrowHandDrawnSimple from '../illustrations/ArrowHandDrawnSimple'
 export default function About() {
   return (
     <>
-      <div className=' w-full h-300 min-h-max bg-bg dark:bg-bg-dark z-10'>
+      <div className=' w-full h-max lg:mb-28 bg-bg dark:bg-bg-dark z-10'>
         <div className='w-full xl:w-[80%] max-w-7xl px-8 py-6 xl:px-12 xl:py-9 flex flex-col items-center mx-auto'>
 
           <motion.h2

@@ -34,6 +34,7 @@ export const AnimatedReactLogo = ({
                 strokeLinejoin="round"
                 initial={{ pathLength: 0, opacity: 1 }}
                 whileInView={{ pathLength: 1, opacity: 1 }}
+                viewport={{ once: true, amount: 0.3 }}
                 transition={{
                     duration,
                     ease: "easeInOut",
@@ -48,6 +49,7 @@ export const AnimatedReactLogo = ({
                 fill={fillColor}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
+                viewport={{ once: true, amount: 0.3 }}
                 transition={{
                     duration: 0.3,
                     delay: duration - 0.2, // Start fading in near end of stroke animation
