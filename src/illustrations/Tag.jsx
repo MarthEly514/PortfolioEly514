@@ -1,0 +1,69 @@
+import React from 'react'
+
+export default function Tag({ classname, width = "252", height = "228", tagRef }) {
+    return (
+        <svg
+        ref={tagRef}
+            className={classname}
+            width={width}
+            height={height}
+            viewBox="0 0 252 228"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M81.2499 76.9863L25.6669 140.821L51.8997 140.183L90.2969 98.2747L81.2499 76.9863Z" fill="#BB99FF" fillOpacity="0.3" />
+            <path d="M117.438 162.14L107.24 138.142L51.8997 140.183L25.6669 140.821C29.9438 150.884 35.2346 161.614 34.8785 162.496C34.5224 163.379 87.4506 162.546 117.438 162.14Z" fill="white" fillOpacity="0.3" />
+            <path d="M25.6669 140.821L81.2499 76.9863L90.2969 98.2747L51.8997 140.183M25.6669 140.821C29.9438 150.884 35.2346 161.614 34.8785 162.496C34.5224 163.379 87.4506 162.546 117.438 162.14L107.24 138.142L51.8997 140.183M25.6669 140.821L51.8997 140.183" stroke="#BB99FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M79.063 79.9073L87.9026 100.335" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M76.8097 82.8138L85.3488 102.947" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M73.8674 85.8188L82.7007 105.652" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M71.5134 88.2228L80.353 108.65" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M69.3931 90.842L77.999 111.054" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M67.1124 94.7608L75.6452 114.299" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M64.7585 97.1648L73.2913 116.703" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M62.7051 99.863L70.9374 119.107" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M60.0507 101.973L68.5835 121.511" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M57.6967 104.377L66.2296 123.915" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M55.6496 107.67L63.8757 126.319" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M52.9952 109.779L61.5218 128.723" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M50.9418 112.478L59.4746 132.016" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M48.5879 114.882L57.1207 134.42" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M46.5345 117.58L54.7668 136.824" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M44.1805 119.984L52.7134 139.522" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M41.8267 122.388L49.4392 139.26" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M39.7733 125.086L45.8708 139.297" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M37.1251 127.79L42.6029 139.629" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M35.0717 130.489L39.0345 139.666" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M32.7178 132.893L35.7666 139.998" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M30.7012 135.842L32.804 140.469" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M28.3105 137.995L29.2245 140.067" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M135.865 22.7025L97.117 179.915L108.96 207.784L146.063 46.7004L135.865 22.7025Z" fill="#BB99FF" fillOpacity="0.48" stroke="#BB99FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M130.078 55.3217L214.611 59.6103L195.945 78.0531L139.125 76.6102L130.078 55.3217Z" fill="currentColor" />
+            <path d="M166.266 140.475L156.067 116.478L195.945 78.0531L214.611 59.6103C218.888 69.6739 222.94 80.9297 223.823 81.2858C224.705 81.6419 187.371 119.168 166.266 140.475Z" fill="currentColor" />
+            <path d="M214.611 59.6103L130.078 55.3217L139.125 76.6102L195.945 78.0531M214.611 59.6103C218.888 69.6739 222.94 80.9297 223.823 81.2858C224.705 81.6419 187.371 119.168 166.266 140.475L156.067 116.478L195.945 78.0531M214.611 59.6103L195.945 78.0531" stroke="#BB99FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M132.898 55.5146L141.73 76.5428" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M135.842 55.9352L144.254 76.5428" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M138.786 56.3557L147.198 76.5428" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M142.992 56.3557L150.983 76.5428" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M146.356 56.3557L154.768 76.9634" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M149.721 56.3557L158.132 76.9634" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M153.506 57.1968L161.497 76.9634" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M156.871 57.1968L164.861 76.9634" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M160.235 57.6174L168.226 76.9634" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M163.6 57.1968L171.59 76.9634" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M166.964 57.1968L174.955 76.9634" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M170.749 58.038L178.319 76.9634" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M174.114 57.6174L181.684 76.9633" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M177.478 58.038L185.469 77.8045" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M180.843 58.038L188.834 77.8045" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M184.207 58.4585L192.198 77.8045" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M187.572 58.4585L195.563 78.225" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M190.936 58.4585L197.665 75.7017" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M194.301 58.8791L200.189 73.1783" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M198.086 58.8791L202.712 71.0755" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M201.45 59.2996L205.236 68.552" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M204.815 59.2997L207.759 66.4493" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M208.18 59.2996L209.862 63.9258" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M211.544 59.7202L212.385 61.823" stroke="#BB99FF" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+    )
+}

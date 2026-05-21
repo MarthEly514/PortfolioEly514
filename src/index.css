@@ -1,0 +1,86 @@
+@import 'tailwindcss';
+@import 'tailwindcss-animated';
+
+:root {
+  --accent: #BB99FF;
+  --accent-dark: #9374d2;
+  --text-primary-light: #000000;
+  --text-secondary-light: #8A8A8A;
+  --text-primary-dark: #FFFFFF;
+  --text-secondary-dark: #c6c6c6;
+  --bg-light: #FFFFFF;
+  --bg-dark: #141414;
+  --bg-ghost: #bfbfbf17;
+}
+
+
+@theme {
+  --color-accent: #BB99FF;
+  --color-accent-light: #EBE1FF;
+  --color-accent-dark: #9374d2;
+
+  --color-bg: #FFFFFF;
+  --color-bg-dark: #141414;
+
+  --color-primary-text: #000000;
+  --color-secondary-text: #8A8A8A;
+  --color-primary-text-dark: #FFFFFF;
+  --color-secondary-text-dark: #c6c6c6;
+
+  --color-ghost: #BFBFBF17;
+  --color-ghost-dark: #E5E5E517;
+
+  --color-secondary: #64748b;
+
+
+
+  /* skill-cards colors */
+  --color-react: #00D8FF;
+  --color-tailwind: #07b6d3;
+  --color-typescript: #3179c7;
+  --color-javascript: #f7e01d;
+  --color-nodejs: #83cd29;
+  --color-git: #ef5132;
+  --color-php: #6e81b6;
+  --color-sql: #4d4d4d;
+  --color-express: #000000;
+  --color-html: #fb6b00;
+  --color-css: #244ee6;
+
+  /* fonts */
+  --font-instrument-sans: "Instrument Sans", sans-serif;
+  --font-julius-sans-one: "Julius Sans One", sans-serif;
+  --font-indie-flower: "Indie Flower", cursive;
+
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Instrument Sans", sans-serif;
+}
+
+.logo {
+  letter-spacing: 10%;
+}
+
+.active {
+  color: var(--accent);
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+/* Basic transitions properties */

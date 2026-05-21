@@ -1,0 +1,22 @@
+import React from 'react'
+
+export default function Disk({ classname, diskRef }) {
+    return (
+        <svg
+            ref={diskRef}
+            className={classname}
+            width="92"
+            height="92"
+            viewBox="0 0 92 92"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="Group 6">
+                <path id="Vector 53" d="M31.0253 32.5528C26.5833 37.4314 15.7533 53.2608 24.6094 69.9016C24.6094 69.9016 19.0374 68.0043 16.0232 62.4636C11.3553 53.8831 9.84264 39.656 22.4391 25.1149C35.0356 10.5737 49.2 10.8981 57.8915 14.1315C63.7126 16.2971 66.3392 21.4495 66.3392 21.4495C49.4824 14.6042 35.4674 27.6742 31.0253 32.5528Z" fill="#BB99FF" fillOpacity="0.41" />
+                <ellipse id="Ellipse 1" cx="32.797" cy="25.4681" rx="32.797" ry="25.4681" transform="matrix(0.654756 -0.75584 -0.75584 -0.654756 48.1174 91.3908)" stroke="#BB99FF" strokeWidth="2" />
+                <path id="Vector 114" d="M19.0605 66.3968L29.4316 75.381" stroke="#BB99FF" strokeWidth="1.5" />
+                <path id="Vector 115" d="M61.7584 16.5406L71.2887 24.7963" stroke="#BB99FF" strokeWidth="1.5" />
+                <ellipse id="Ellipse 2" cx="32.797" cy="25.4681" rx="32.797" ry="25.4681" transform="matrix(0.654756 -0.75584 -0.75584 -0.654756 38.4996 83.2362)" fill="#BB99FF" fillOpacity="0.3" stroke="#BB99FF" strokeWidth="2" />
+            </g>
+        </svg>
+    )
+}
