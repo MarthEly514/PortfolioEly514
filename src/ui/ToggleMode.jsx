@@ -5,7 +5,18 @@ export default function ToggleMode() {
     const [isDark, setIsDark] = useState(true);
 
     useEffect(() => {
-        setIsDark(document.documentElement.classList.contains('dark'));
+        const observer = new MutationObserver(() => {
+            const isDark = document.documentElement.classList.contains('dark');
+            setIsDark(isDark);
+        });
+
+        observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ['class'],
+        });
+
+        return () => observer.disconnect(); 
+        // setIsDark(document.documentElement.classList.contains('dark'));
     }, []);
 
     const toggleTheme = () => {
@@ -32,7 +43,7 @@ export default function ToggleMode() {
                     {/* Sun */}
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className={`w-5 h-5 text-white/70 transition-all ${!isDark ? 'hidden' : 'block'}`}
+                        className={`w-5 h-5 text-white/70 transition-all dark:block hidden`}
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -48,7 +59,7 @@ export default function ToggleMode() {
                     {/* Moon */}
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className={`w-5 h-5 text-black transition-all ${!isDark ? 'block' : 'hidden'}`}
+                        className={`w-5 h-5 text-black transition-all dark:hidden block`}
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
