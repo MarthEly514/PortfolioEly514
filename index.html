@@ -3,10 +3,15 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" id="iconLink" href='Ely514.svg' />
   <script>
     (function () {
       const saved = localStorage.getItem('theme');
+      const iconLink = document.getElementById('iconLink');
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      prefersDark ? iconLink.setAttribute('href', 'Ely514.svg') : iconLink.setAttribute('href', 'Ely514_accent.svg');
+
       if (saved === 'dark' || (!saved && prefersDark)) {
         document.documentElement.classList.add('dark');
       } else {
@@ -14,7 +19,6 @@
       }
     })();
   </script>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
