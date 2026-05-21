@@ -12,8 +12,8 @@ export default function Footer() {
             <ul className='w-full flex flex-col items-start justify-center gap-2 text-[1em] instrument-sans-500 font-medium'>
               <li><a href="#" className={`${active == 'portfolio' ? 'text-accent font-semibold' : 'text-secondary-text dark:text-secondary-text-dark'} transition-all`} onClick={() => setActive("portfolio")}>Portfolio</a></li>
               <li><a href="#about" className={`${active == 'about' ? 'text-accent' : 'text-secondary-text dark:text-secondary-text-dark'} transition-all`} onClick={() => setActive("about")}>À propos</a></li>
-              <li><a href="#" className={`${active == 'projects' ? 'text-accent' : 'text-secondary-text dark:text-secondary-text-dark'} transition-all`} onClick={() => setActive("projects")}>Projets</a></li>
-              <li><a href="#" className={`${active == 'contact' ? 'text-accent' : 'text-secondary-text dark:text-secondary-text-dark'} transition-all`} onClick={() => setActive("contact")}>Contact</a></li>
+              <li><a href="#projects" className={`${active == 'projects' ? 'text-accent' : 'text-secondary-text dark:text-secondary-text-dark'} transition-all`} onClick={() => setActive("projects")}>Projets</a></li>
+              <li><a href="#contact" className={`${active == 'contact' ? 'text-accent' : 'text-secondary-text dark:text-secondary-text-dark'} transition-all`} onClick={() => setActive("contact")}>Contact</a></li>
             </ul>
           </nav>
           <ToggleMode />

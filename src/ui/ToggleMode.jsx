@@ -2,21 +2,10 @@ import { useEffect, useState } from 'react';
 import Button from './Button';
 
 export default function ToggleMode() {
-    const [isDark, setIsDark] = useState(false);
+    const [isDark, setIsDark] = useState(true);
 
     useEffect(() => {
-        const savedTheme = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        const shouldBeDark = savedTheme === 'dark' || (!savedTheme && prefersDark);
-
-        if (shouldBeDark) {
-            document.documentElement.classList.add('dark');
-            setIsDark(true);
-        } else {
-            document.documentElement.classList.remove('dark');
-            setIsDark(false);
-        }
+        setIsDark(document.documentElement.classList.contains('dark'));
     }, []);
 
     const toggleTheme = () => {
