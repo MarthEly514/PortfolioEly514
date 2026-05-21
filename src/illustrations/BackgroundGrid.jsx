@@ -4,7 +4,7 @@ export default function BackgroundGrid() {
     return (
         <div className='w-full h-screen absolute top-0 left-0 z-0'>
             <svg
-                className='w-full h-full text-bg dark:text-bg-dark transition-all '
+                className='h-screen xl:w-full xl:h-full text-bg dark:text-bg-dark transition-all '
                 width="1280"
                 height="832"
                 viewBox="0 0 1280 832"
@@ -86,7 +86,7 @@ export default function BackgroundGrid() {
                 <line x1="4" y1="650" x2="1284" y2="650" stroke="currentColor" strokeWidth="30" />
                 <line x1="4" y1="702" x2="1284" y2="702" stroke="currentColor" strokeWidth="30" />
                 <line x1="4" y1="754" x2="1284" y2="754" stroke="currentColor" strokeWidth="30" />
-                <rect x="-2" y="-6" width="1280" height="832" fill="url(#paint0_radial_44_105)" />
+                <rect x="-2" y="-6" width="1280" height="890" fill="url(#paint0_radial_44_105)" />
                 <defs>
                     <radialGradient id="paint0_radial_44_105" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(638 410) rotate(90) scale(416 640)">
                         <stop stopColor="currentColor" stopOpacity="0" />

@@ -73,7 +73,7 @@ export default function Hero() {
           {/* Disk */}
           <Disk
             diskRef={disk1Ref}
-            classname="hidden lg:flex absolute top-[45%] right-[35%] scale-120
+            classname="hidden xl:flex absolute top-[45%] right-[35%] scale-120
             animate-fade animate-once animate-ease-in-out animate-delay-2300 animate-duration-1000"
           />
 
@@ -85,35 +85,36 @@ export default function Hero() {
             " />
 
           {/* Subject informations on the right */}
-          <div className="absolute left-[50vw] -translate-x-1/2 w-full lg:w-[80%] max-w-7xl h-screen flex flex-col items-center lg:items-start lg:pl-12 justify-center">
-            <div>
+          <div className="lg:absolute lg:left-[50vw] lg:-translate-x-1/2 w-full lg:w-[80%] max-w-7xl h-screen flex flex-col items-center lg:items-start lg:pl-12 justify-center">
+            <div className='px-8 lg:px-0'>
               <h2 className="text-[1.9em] text-primary-text dark:text-primary-text-dark 
               animate-fade animate-once animate-ease-linear animate-duration-1000 animate-delay-500">
                 {`${greetingWord}, je suis`}
               </h2>
-              <h1 className="text-[4em] uppercase font-julius-sans-one text-accent
+              <h1 className="md:text-[4em] text-[3.5em] whitespace-normal lg:text-[4em] uppercase font-julius-sans-one text-accent
               animate-fade-right animate-once animate-ease-in-out animate-duration-1000 animate-delay-1200">
                 Marthely Adjovi
               </h1>
             </div>
-            <h2 className="uppercase text-2xl tracking-widest text-secondary-text dark:text-secondary-text-dark
+            <h2 className="uppercase px-8 lg:px-0 text-[1.3em] md:text-2xl tracking-widest text-secondary-text dark:text-secondary-text-dark
             animate-fade animate-once animate-ease-in-out animate-duration-1000 animate-delay-1800
             ">
               Développeur web Fullstack
             </h2>
-            <div className='flex flex-row items-center justify-start gap-5 mt-8
+            <div className='flex flex-col lg:flex-row items-center justify-between lg:justify-start w-full px-5 gap-5 mt-8
             animate-fade animate-once animate-ease-in-out animate-duration-1000 animate-delay-2800
             '>
-              <a href="documents/Marthely_ADJOVI_Resume.pdf" download='Marthely_ADJOVI_Resume.pdf'>
+              <a href="documents/Marthely_ADJOVI_Resume.pdf" download='Marthely_ADJOVI_Resume.pdf' className='w-full max-w-52'>
 
                 <Button
+                  expand={true}
                   variant='border'
                   text={"Télécharger CV"}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="24px"
-                      viewBox="0 -960 960 960"
+                      viewBox="0 -960 960 960"className='w-full max-w-52'
                       width="24px"
                       fill="#BB99FF">
                       <path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z" />
@@ -121,8 +122,9 @@ export default function Hero() {
                   }
                   iconPos='right' />
               </a>
-              <a href="#projects">
+              <a href="#projects" className='w-full max-w-52'>
                 <Button
+                  expand={true}
                   text={"Mes projets"}
                   icon={
                     <svg
@@ -140,7 +142,7 @@ export default function Hero() {
           </div>
 
 
-          {/* scroll indicator arrow */}
+          {/* scroll direction arrow */}
           <div className='absolute left-[50vw] -translate-x-1/2 bottom-9 z-10 flex flex-col items-center justify-center gap-3 animate-fade animate-once animate-ease-in-out animate-delay-2500 animate-duration-1000'>
             <h2 className='uppercase text-xl text-accent'>Scroll</h2>
             <ScrollDownArrow classname="animate-bounce animate-infinite animate-duration-2600 animate-ease-out" />

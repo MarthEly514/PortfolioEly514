@@ -5,7 +5,7 @@ import { motion } from 'motion/react';
 export default function ImageBlob() {
     return (
         <>
-            <div className='relative w-125 aspect-10/9 flex items-center justify-center'>
+            <div className='hidden relative w-125 aspect-10/9 xl:flex items-center justify-center'>
                 <motion.div
                     className='absolute w-125 aspect-10/9 bg-accent/70'
                     style={blob2Style}
@@ -61,6 +61,68 @@ export default function ImageBlob() {
 
                     transition={{
                         duration: 10,
+                        ease: "linear",
+                        repeat: Infinity
+                    }}
+                >
+                </motion.div>
+            </div>
+
+            <div className='xl:hidden flex w-full aspect-square flex-col items-center justify-center'>
+                <motion.div
+                    className='absolute w-[80%] md:w-[60%] aspect-10/9 bg-accent/70'
+                    style={blob2Style}
+                    animate={{
+                        borderRadius: [
+                            "72% 28% 62% 38% / 53% 36% 64% 47%",
+                            "43% 57% 65% 45% / 53% 52% 51% 47%",
+                            "28% 72% 38% 62% / 47% 64% 36% 53%",
+                            "43% 57% 65% 45% / 53% 52% 51% 47%",
+                            "72% 28% 62% 38% / 53% 36% 64% 47%"
+                        ],
+                        rotate: [0, -90, -180, -270, -360]
+                    }}
+                    transition={{
+                        duration: 15,
+                        ease: "linear",
+                        repeat: Infinity
+                    }}
+                >
+                </motion.div>
+                <motion.div
+                    className='absolute w-[80%] md:w-[60%] aspect-10/9 bg-accent/70'
+                    style={blob2Style}
+                    animate={{
+                        borderRadius: [
+                            "72% 28% 62% 38% / 53% 36% 64% 47%",
+                            "43% 57% 65% 45% / 53% 52% 51% 47%",
+                            "28% 72% 38% 62% / 47% 64% 36% 53%",
+                            "43% 57% 65% 45% / 53% 52% 51% 47%",
+                            "72% 28% 62% 38% / 53% 36% 64% 47%"
+                        ],
+                        rotate: [0, 90, 180, 270, 360] // or [0, 0, 0, 0, -360] for counterclockwise
+                    }}
+                    transition={{
+                        duration: 15,
+                        ease: "linear",
+                        repeat: Infinity
+                    }}
+                >
+                </motion.div>
+                <motion.div
+                    className='absolute w-[80%] md:w-[60%] aspect-10/9 bg-accent/70'
+                    style={blob1Style}
+                    animate={{
+                        borderRadius: [
+                            "72% 28% 62% 38% / 53% 36% 64% 47%",
+                            "43% 57% 65% 45% / 53% 52% 51% 47%",
+                            "28% 72% 38% 62% / 47% 64% 36% 53%",
+                            "43% 57% 65% 45% / 53% 52% 51% 47%",
+                            "72% 28% 62% 38% / 53% 36% 64% 47%"
+                        ],
+                    }}
+                    transition={{
+                        duration: 15,
                         ease: "linear",
                         repeat: Infinity
                     }}

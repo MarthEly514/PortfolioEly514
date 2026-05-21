@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 export default function Button({
     onclick = null,
     hideTextOnMin = false,
+    expand = false,
     variant = "default",
     text,
     icon = null,
@@ -13,7 +14,7 @@ export default function Button({
 }) {
 
     // Base styles
-    const baseStyles = `cursor-pointer w-max ${hideTextOnMin ? 'p-4' : 'px-6 py-3'} rounded-full flex flex-row items-center justify-center gap-2 font-medium transition-all duration-200`;
+    const baseStyles = `${expand ? 'w-full' : 'w-max'} cursor-pointer ${hideTextOnMin ? 'p-4' : 'px-6 py-3'} rounded-full flex flex-row items-center justify-center gap-2 font-medium transition-all duration-200`;
 
     // Variant styles
     const variants = {
