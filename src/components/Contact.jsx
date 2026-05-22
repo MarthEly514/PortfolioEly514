@@ -13,10 +13,6 @@ export default function Contact() {
   const [status, setStatus] = useState('');
   const [showSnackbar, setShowSnackbar] = useState(false);
 
-  useEffect(() => {
-    document.title = "Contact - InvoiceGen";
-  }, []);
-
   const handleChange = (e) => {
     setFormData({
       ...formData,
